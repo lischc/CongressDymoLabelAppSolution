@@ -30,11 +30,8 @@ namespace CongressDymoLabelApp
             }
             else
             {
-                // int indexstart = mstrMessage.IndexOf(" HTTP/1.1");
-                // String firstline = mstrMessage.Remove(indexstart).Replace("GET /?", "");
                 String firstline = mstrMessage.Replace("GET /?", "");
                 firstline = Uri.UnescapeDataString(firstline);
-                // firstline = firstline.Remove(firstline.IndexOf("&end=true"));
                 String[] parts = firstline.Split(new String[] { "&" }, StringSplitOptions.RemoveEmptyEntries);
                 String firstname = "";
                 String lastname = "";
