@@ -1,0 +1,10 @@
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\bin\Debug\CongressDymoLabelApp.exe
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\bin\Debug\CongressDymoLabelApp.pdb
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.Properties.Resources.resources
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.csproj.GenerateResource.Cache
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.exe
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.pdb
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.IPSelection.resources
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.MainForm.resources
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\obj\x86\Debug\CongressDymoLabelApp.csprojResolveAssemblyReference.cache
+C:\workspaces\congress\CongressDymoLabelAppSolution\CongressDymoLabelApp\bin\Debug\CongressDymoLabelApp.exe.config
