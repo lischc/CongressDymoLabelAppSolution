@@ -38,7 +38,8 @@ namespace CongressDymoLabelApp
         {
             Debug.WriteLine("Selected address: " + MainForm.selectedAddress);
             // send information to congress webapp (Servlet must be in place)
-            WebRequest request = WebRequest.Create("http://stafam-online.at/seminar-webapp/config?labelPrinterAddress=" + MainForm.selectedAddress);
+            String serverName = Properties.Settings.Default.serverName; // http://stafam-online.at/seminar-webapp
+            WebRequest request = WebRequest.Create(serverName + "/config?labelPrinterAddress=" + MainForm.selectedAddress);
             request.Method = "GET";
             request.Timeout = 1000; // 1 second timeout
             // Get the response.
