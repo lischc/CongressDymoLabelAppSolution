@@ -31,6 +31,7 @@ namespace CongressDymoLabelApp
                 Debug.WriteLine(adr);
                 this.cmbIPAddresses.Items.Add(adr);
             }
+            this.cmbIPAddresses.SelectedIndex = 0;
         }
 
         private void btnSelect_Click(object sender, EventArgs e)
