@@ -25,7 +25,7 @@ namespace CongressDymoLabelApp.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://stafam-online.at/seminar-webapp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/seminar-webapp")]
         public string serverName {
             get {
                 return ((string)(this["serverName"]));

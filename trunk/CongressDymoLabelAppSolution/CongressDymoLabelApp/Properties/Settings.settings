@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="serverName" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://stafam-online.at/seminar-webapp</Value>
+      <Value Profile="(Default)">http://localhost/seminar-webapp</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -30,7 +30,11 @@ namespace CongressDymoLabelApp
             }
             else
             {
-                String firstline = mstrMessage.Replace("GET /?", "");
+                String firstline = mstrMessage.Replace("GET /?", "").Replace("GET ?", "");
+                if (firstline.Contains(" HTTP/1.1"))
+                {
+                    firstline = firstline.Substring(0, firstline.IndexOf(" HTTP/1.1"));
+                }
                 firstline = Uri.UnescapeDataString(firstline);
                 String[] parts = firstline.Split(new String[] { "&" }, StringSplitOptions.RemoveEmptyEntries);
                 String firstname = "";
@@ -39,7 +43,7 @@ namespace CongressDymoLabelApp
                 String seminars = "";
                 foreach (String part in parts)
                 {
-                    Debug.WriteLine("parts=" + parts);
+                    Debug.WriteLine("parts=" + String.Join(", ", parts));
                     String[] kv = part.Split(new String[] { "=" }, StringSplitOptions.RemoveEmptyEntries);
                     if ("firstname".Equals(kv[0]))
                     {
@@ -58,7 +62,13 @@ namespace CongressDymoLabelApp
                         seminars = kv.Length > 1 ? kv[1] : "";
                     }
                 }
+                seminars = seminars.Replace("+", "-");
                 mainForm.addAndPrint(firstname, lastname, lectures, seminars);
+
+                byte[] response = new UTF8Encoding().GetBytes("HTTP/1.1 200 OK");
+                stream.Write(response, 0, response.Length);
+                stream.Flush();
+                
                 return false;
             }
         }
