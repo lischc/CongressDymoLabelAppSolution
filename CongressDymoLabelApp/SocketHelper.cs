@@ -62,7 +62,8 @@ namespace CongressDymoLabelApp
                         seminars = kv.Length > 1 ? kv[1] : "";
                     }
                 }
-                seminars = seminars.Replace("+", "-");
+                lectures = lectures.Replace("+", " ");
+                seminars = seminars.Replace("+", " ");
                 mainForm.addAndPrint(firstname, lastname, lectures, seminars);
 
                 byte[] response = new UTF8Encoding().GetBytes("HTTP/1.1 200 OK");
